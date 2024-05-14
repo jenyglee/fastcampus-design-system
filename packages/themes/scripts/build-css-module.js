@@ -29,7 +29,7 @@ const generateThemeCssVariable = () => {
                   ([subKey, subValue]) =>
                     `--${toCssCasting(mainKey)}-${toCssCasting(
                       subKey
-                    )} : ${subValue}`
+                    )} : ${subValue};`
                 )
                 .join('\n')
             )
