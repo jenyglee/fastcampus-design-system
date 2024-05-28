@@ -7,7 +7,7 @@ import styled from '@emotion/styled';
 
 function App() {
   const theme = {
-    colors: vars.colors.$static.light,
+    colors: vars.colors.$static.dark,
   };
   return (
     <ThemeProvider theme={theme}>
@@ -24,7 +24,7 @@ function View() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Text>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Edit <code>src/App.tsx</code> and save to {vars.box.radii['2xl']}.
         </Text>
         <a
           className="App-link"
